@@ -1,0 +1,790 @@
+{
+    "$schema": "https://raw.githubusercontent.com/0zd0/wordpress-hooks-stub-generator/dev/schema.json",
+    "hooks": [
+        {
+            "name": "edd_sl_plugin_updater_api_params",
+            "file": "includes/backend/updater.php",
+            "type": "filter",
+            "doc": {
+                "description": "Filters the parameters sent in the API request.",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": [
+                    {
+                        "name": "param",
+                        "content": "<p>The array of data sent in the request.</p>",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$api_params"
+                    },
+                    {
+                        "name": "param",
+                        "content": "<p>The array of data set up in the class constructor.</p>",
+                        "types": [
+                            "array"
+                        ],
+                        "variable": "$this->api_data"
+                    },
+                    {
+                        "name": "param",
+                        "content": "<p>The full path and filename of the file.</p>",
+                        "types": [
+                            "string"
+                        ],
+                        "variable": "$this->plugin_file"
+                    }
+                ]
+            },
+            "args": 3
+        },
+        {
+            "name": "edd_sl_api_request_verify_ssl",
+            "file": "includes/backend/updater.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_field_default_value",
+            "file": "includes/render/render.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 3
+        },
+        {
+            "name": "wcpa_form_field",
+            "file": "includes/render/render.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_copy_cart_data",
+            "file": "includes/render/render.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_form_render_hook",
+            "file": "includes/render/render.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_attribute_translations_key",
+            "file": "includes/render/product.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_order_meta_data",
+            "file": "includes/order/order.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "self::$CPT . '_labels",
+            "file": "includes/options.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "self::$CPT . '_register_args",
+            "file": "includes/options.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "self::$CPT . '_labels",
+            "file": "includes/form.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "self::$CPT . '_register_args",
+            "file": "includes/form.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "raw_woocommerce_price",
+            "file": "includes/helper.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_addons",
+            "file": "includes/helper.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_cart_addon_data",
+            "file": "includes/helper.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "active_plugins",
+            "file": "includes/main.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_discount_before_set_product_price",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "advanced_woo_discount_rules_get_product_discount_price_from_custom_price",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "flycart discount plugin",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 7
+        },
+        {
+            "name": "advanced_woo_discount_rules_get_product_discount_price_from_custom_price",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 7
+        },
+        {
+            "name": "advanced_woo_discount_rules_get_product_discount_price_from_custom_price",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "flycart discount plugin",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 7
+        },
+        {
+            "name": "wcpa_discount_rule",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_product_price",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_cart_addon_data",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_cart_addon_data",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_cart_addon_data",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_cart_addon_data",
+            "file": "includes/compatibility/discounts.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_add_cart_item_data",
+            "file": "includes/compatibility/comp.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 5
+        },
+        {
+            "name": "wcpa_render_form",
+            "file": "includes/compatibility/comp.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcml_raw_price_amount",
+            "file": "includes/compatibility/wpml_currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wpml_default_language",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wpml_current_language",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_set_default_lang",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_element_trid",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_get_element_translations",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_active_languages",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_active_languages",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_get_element_translations",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_element_trid",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_element_trid",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_post_language_details",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_element_trid",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_get_element_translations",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_get_element_translations",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_element_trid",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_object_id",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 4
+        },
+        {
+            "name": "wpml_object_id",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 4
+        },
+        {
+            "name": "wpml_element_trid",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wpml_get_element_translations",
+            "file": "includes/compatibility/ml.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_currency_converted_product_price",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_currency_before_set_product_price",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 3
+        },
+        {
+            "name": "wcpa_convert_currency",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 4
+        },
+        {
+            "name": "wcpa_currency_conversion_unit",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 3
+        },
+        {
+            "name": "woocs_convert_price",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "https://wordpress.org/plugins/woocommerce-currency-switcher",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcml_raw_price_amount",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wc_aelia_cs_convert",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 4
+        },
+        {
+            "name": "woocs_convert_price",
+            "file": "includes/compatibility/currency.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_product_price_parent_selector",
+            "file": "includes/front.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_attribute_translations_key",
+            "file": "includes/front.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "woocommerce_add_to_cart_redirect",
+            "file": "includes/front.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_configurations",
+            "file": "includes/config.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_zero_as_empty",
+            "file": "includes/process/process.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 1
+        },
+        {
+            "name": "wcpa_form_field",
+            "file": "includes/process/process.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "woocommerce_cart_redirect_after_error",
+            "file": "includes/process/process.php",
+            "type": "filter",
+            "doc": {
+                "description": "",
+                "long_description": "",
+                "long_description_html": "",
+                "tags": []
+            },
+            "args": 2
+        },
+        {
+            "name": "wcpa_cart_product_edit_button",
+            "file": "includes/process/cart.php",
+            "type": "filter",
+            "doc": {
+                "description": "","long_description":"","long_description_html":"","tags":[]},"args":5},{"name":"woocommerce_cart_product_subtotal","file":"includes/process/cart.php","type":"filter","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":4},{"name":"wcpa_add_cart_item_data","file":"includes/process/cart.php","type":"filter","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":4},{"name":"wcpa_add_cart_item_data","file":"includes/process/cart.php","type":"filter","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":4},{"name":"wcpa_field_price","file":"includes/process/cart.php","type":"filter","doc":{"description":"","long_description":"","long_description_html":"","tags":[]},"args":3}]}

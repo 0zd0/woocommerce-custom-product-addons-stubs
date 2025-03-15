@@ -247,6 +247,10 @@ class BackendApi
     public function deactivate_license($data)
     {
     }
+    //Reset License Key
+    public function reset_key()
+    {
+    }
     //Export Form
     public function export_form($data)
     {
@@ -526,6 +530,9 @@ class Settings
     {
     }
     public function deactivate_license($key)
+    {
+    }
+    public function reset_key()
     {
     }
 }
@@ -1847,6 +1854,15 @@ class Order
     public function order_meta_plain($v, $form_rules, $show_price = true, $quantity = 1, $product = false)
     {
     }
+    public function sanitize_values($value, $type)
+    {
+    }
+    public function before_save_order_items($order_id, $items)
+    {
+    }
+    public function order_meta_plain_v1($v)
+    {
+    }
     /**
      * Prepare addon values as plain text, it can be stored as order line item meta
      * This data can be utilized even if WCPA plugin is inActive
@@ -1888,6 +1904,14 @@ class Cart
 {
     public $config;
     public function __construct()
+    {
+    }
+    /**
+     * Using for setting coupon discount for fees - Added on  Sep25 2024
+     * @param $items
+     * @return mixed
+     */
+    function coupon_get_items_to_validate($items)
     {
     }
     /**
@@ -1945,7 +1969,7 @@ class Cart
     public function cart_item_restored($cart_item_key, $cartObject)
     {
     }
-    public function add_addon_product_to_cart($cart_item_key)
+    public function add_addon_product_to_cart($cart_item_key, $isRestore = false)
     {
     }
     /**
@@ -2525,7 +2549,7 @@ class FormValidation
     public function __construct($product = false, $quantity = 1)
     {
     }
-    public function validateGroup($field, $dField, $fieldData)
+    public function validateGroup($field, $dField, $fieldData, $sectionKey)
     {
     }
     public function validate($field, $dField)
@@ -2917,7 +2941,7 @@ class Weight
 }
 class Product
 {
-    public $translate_keys = ['label', 'placeholder', 'description', 'value', 'tooltip', 'repeater_section_label', 'repeater_field_label', 'repeater_add_label', 'repeater_remove_label', 'quantity_label', 'check_value', 'requiredError', 'validEmailError', 'validUrlError', 'minFieldsError', 'maxFieldsError', 'groupMinError', 'groupMaxError', 'otherFieldError', 'quantityRequiredError', 'allowedCharsError', 'patternError', 'maxlengthError', 'minlengthError', 'minValueError', 'maxValueError', 'minQuantityError', 'maxQuantityError', 'maxFileCountError', 'minFileCountError', 'maxFileSizeError', 'minFileSizeError', 'fileExtensionError'];
+    public $translate_keys = ['label', 'placeholder', 'description', 'value', 'tooltip', 'repeater_section_label', 'repeater_field_label', 'repeater_add_label', 'repeater_remove_label', 'quantity_label', 'check_value', 'requiredError', 'validEmailError', 'validUrlError', 'minFieldsError', 'maxFieldsError', 'groupMinError', 'groupMaxError', 'otherFieldError', 'quantityRequiredError', 'allowedCharsError', 'patternError', 'maxlengthError', 'minlengthError', 'minValueError', 'maxValueError', 'minQuantityError', 'maxQuantityError', 'maxFileCountError', 'minFileCountError', 'maxFileSizeError', 'minFileSizeError', 'fileExtensionError', 'summary_title', 'options_total_label', 'total_label', 'options_product_label', 'discount_label'];
     public function __construct()
     {
     }
@@ -3015,7 +3039,7 @@ class Render
     public function init()
     {
     }
-    public function wcpa_render_form_filter($data, $product)
+    public function wcpa_render_form_filter($data, $product, $isRest = false)
     {
     }
     public function render_form($isRest = false, $doReturn = false, $product_id = false)
@@ -3043,6 +3067,9 @@ class Render
     {
     }
     public function get_pro_attr_list($pro = false)
+    {
+    }
+    public function extend_wpgraphql_schema()
     {
     }
     public function wc_api_support()

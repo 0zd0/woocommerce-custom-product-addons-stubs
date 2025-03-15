@@ -5,7 +5,7 @@
 
 HEADER=$'/**\n * Generated stub declarations for Woocommerce Custom Product Addons.\n * @see https://acowebs.com/woo-custom-product-addons\n * @see https://github.com/0zd0/carbon-fields-stubs\n */'
 
-FILE="woocommerce-custom-product-addons-stubs.php"
+FILE="woocommerce-custom-product-addons-stubs.phpstub"
 DIR=$(dirname "$0")
 
 IGNORE_HOOKS=(
